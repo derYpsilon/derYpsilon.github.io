@@ -204,6 +204,25 @@ body {
   .header__title {
     text-align: center;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .header__image {
+    margin: 20px 0 40px 0;
+  }
+
+  .page {
+    width: calc(100% - 40px);
+  }
+
+  .header {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .header__title {
+    text-align: center;
+  }
 
   .skills {
     flex-direction: column;
@@ -225,3 +244,4 @@ body {
     margin-bottom: 40px;
   }
 }
+
