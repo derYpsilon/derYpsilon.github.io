@@ -80,7 +80,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 40px;
+  margin-left: 60px;
 }
 
 .skills__type {
@@ -93,9 +93,11 @@ body {
   margin: 0 0 20px 0;
   opacity: 0.7;
   cursor: pointer;
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
-.skills__type:hover {
+.skills__type:hover, .skills__type:active, .skills__type:focus {
   opacity: 1;
   animation-name: rotation;
   animation-duration: 2s;
@@ -103,30 +105,17 @@ body {
 
 .skills__type_js {
   background-color: #fae000;
+  color: black;
 }
 
 .skills__type_css {
   background-color: #0060b1;
+  color: #d3d3d3;
 }
 
 .skills__type_html {
   background-color: #ef3c02;
-}
-
-.skills__type-text {
-  font-size: 3.5rem;
-}
-
-.skills__type-text_html {
   color: #d3d3d3;
-}
-
-.skills__type-text_css {
-  color: #d3d3d3;
-}
-
-.skills__type-text_js {
-  color: black;
 }
 
 .projects__window-header {
@@ -145,6 +134,12 @@ body {
   border-bottom-right-radius: 10px;
   line-height: 1.3;
   padding: 20px;
+  font-size: 1rem;
+  color: #a4ccd6;
+}
+
+.projects__window-body p {
+  margin: 0 10px 20px 10px;
 }
 
 .projects__window-body-link {
@@ -188,6 +183,9 @@ body {
 }
 
 @media screen and (max-width: 1023px) {
+  .header__text-wrapper {
+    width: 70%;
+  }
   .header__image {
     margin: 20px 0 40px 0;
   }
@@ -207,6 +205,11 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+
+  .header__text-wrapper {
+    width: 100%;
+  }
+
   .header__image {
     margin: 20px 0 40px 0;
   }
